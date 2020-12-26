@@ -597,7 +597,7 @@ class Camera extends React.Component {
               <input name={name} type="file" accept="image/*" capture="camera" className="image-upload" onChange={this.displayImage} />
               <div className="image-upload-control">
                 <div className="btn btn-default btn-school"><i className="fas fa-camera"></i> Upload Photo</div>
-                <p>Select an image from your computer or device.</p>
+                <p>Wybierz obraz ze swojego urządzenia.</p>
               </div>
             </div>
 
@@ -605,7 +605,7 @@ class Camera extends React.Component {
               <div>
                 <img src={ this.state.img } height="100" className="image-upload-preview" /><br />
                 <div className="btn btn-school btn-image-clear" onClick={this.clearImage}>
-                  <i className="fas fa-times"></i> Clear Photo
+                  <i className="fas fa-times"></i> Wyczyść obraz
                 </div>
               </div>
             }

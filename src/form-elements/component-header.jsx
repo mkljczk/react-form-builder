@@ -8,7 +8,7 @@ const ComponentHeader = (props) => {
   return (
     <div>
     { props.data.pageBreakBefore &&
-      <div className="preview-page-break">Page Break</div>
+      <div className="preview-page-break">Podział wierszu</div>
     }
     <HeaderBar parent={props.parent} editModeOn={props.editModeOn} data={props.data} onDestroy={props._onDestroy} onEdit={props.onEdit} static={props.data.static} required={props.data.required} />
   </div>
