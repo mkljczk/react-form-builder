@@ -75,7 +75,7 @@ class ReactFormBuilder extends React.Component {
            </div>
          </div>
        </div>
-       </DndProvider>
+     </DndProvider>
     );
   }
 }

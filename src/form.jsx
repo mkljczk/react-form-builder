@@ -218,11 +218,11 @@ export default class ReactForm extends React.Component {
       }
 
       if (this._isInvalid(item)) {
-        errors.push(`${item.label} is required!`);
+        errors.push(`${item.label} jest wymagane!`);
       }
 
       if (this.props.validateForCorrectness && this._isIncorrect(item)) {
-        errors.push(`${item.label} was answered incorrectly!`);
+        errors.push(`${item.label} zostało nieprawidłowo odpowiedziane!`);
       }
     });
 
@@ -291,8 +291,8 @@ export default class ReactForm extends React.Component {
       display: 'none',
     };
 
-    const actionName = (this.props.action_name) ? this.props.action_name : 'Submit';
-    const backName = (this.props.back_name) ? this.props.back_name : 'Cancel';
+    const actionName = (this.props.action_name) ? this.props.action_name : 'Wyślij';
+    const backName = (this.props.back_name) ? this.props.back_name : 'Anuluj';
 
     return (
       <div>

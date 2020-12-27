@@ -19,7 +19,32 @@ export default class Preview extends React.Component {
 
     this.editForm = React.createRef();
     this.state = {
-      data: [],
+      data: [
+        {
+          element: 'TextInput',
+          fieldName: 'firstName',
+          id: 'firstName',
+          inline: false,
+          label: 'Imię',
+          required: true,
+        },
+        {
+          element: 'TextInput',
+          fieldName: 'lastName',
+          id: 'lastName',
+          inline: false,
+          label: 'Nazwisko',
+          required: true,
+        },
+        {
+          element: 'TextInput',
+          fieldName: 'email',
+          id: 'email',
+          inline: false,
+          label: 'Adres e-mail',
+          required: true,
+        }
+      ],
       answer_data: {},
     };
     this.seq = 0;
@@ -101,6 +126,8 @@ export default class Preview extends React.Component {
   }
 
   _onDestroy(item) {
+    if (['firstName', 'lastName', 'email'].includes(item.fieldName)) return;
+    console.log(item);
     store.dispatch('delete', item);
   }
 

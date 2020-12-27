@@ -21,7 +21,7 @@
     "drag",
     "drop"
   ],
-  "author": "Kiho Chang",
+  "author": "Marcin Mikołajczak",
   "dependencies": {
     "beedle": "^0.8.1",
     "classnames": "^2.2.6",
@@ -40,7 +40,6 @@
     "react-draft-wysiwyg": "^1.13.2",
     "react-select": "^3.0.8",
     "react-signature-canvas": "^1.0.3",
-    "react-star-rating": "^1.4.2",
     "react-textarea-autosize": "^7.1.2",
     "xss": "^1.0.6"
   },
@@ -72,8 +71,8 @@
     "express": "^4.17.1",
     "multer": "^1.4.2",
     "node-sass": "^4.14.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "rimraf": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
