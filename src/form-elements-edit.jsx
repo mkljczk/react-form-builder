@@ -201,7 +201,7 @@ export default class FormElementsEdit extends React.Component {
               onBlur={this.updateElement.bind(this)}
               onEditorStateChange={this.onEditorStateChange.bind(this, 0, 'label')}
               stripPastedStyles={true}
-              readOnly={['firstName', 'lastName', 'email'].includes(this.props.element.fieldName)}
+              readOnly={['firstName', 'lastName', 'email'].includes(this.props.element.field_name)}
             />
             <br />
             <div className="custom-control custom-checkbox">
@@ -212,7 +212,7 @@ export default class FormElementsEdit extends React.Component {
                 checked={this_checked}
                 value={true}
                 onChange={this.editElementProp.bind(this, 'required', 'checked')}
-                disabled={['firstName', 'lastName', 'email'].includes(this.props.element.fieldName)}
+                disabled={['firstName', 'lastName', 'email'].includes(this.props.element.field_name)}
               />
               <label className="custom-control-label" htmlFor="is-required">
                 Wymagane

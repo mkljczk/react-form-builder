@@ -22,7 +22,7 @@ export default class Preview extends React.Component {
       data: [
         {
           element: 'TextInput',
-          fieldName: 'firstName',
+          field_name: 'firstName',
           id: 'firstName',
           inline: false,
           label: 'Imię',
@@ -30,7 +30,7 @@ export default class Preview extends React.Component {
         },
         {
           element: 'TextInput',
-          fieldName: 'lastName',
+          field_name: 'lastName',
           id: 'lastName',
           inline: false,
           label: 'Nazwisko',
@@ -38,7 +38,7 @@ export default class Preview extends React.Component {
         },
         {
           element: 'TextInput',
-          fieldName: 'email',
+          field_name: 'email',
           id: 'email',
           inline: false,
           label: 'Adres e-mail',
@@ -126,7 +126,7 @@ export default class Preview extends React.Component {
   }
 
   _onDestroy(item) {
-    if (['firstName', 'lastName', 'email'].includes(item.fieldName)) return;
+    if (['firstName', 'lastName', 'email'].includes(item.field_name)) return;
     console.log(item);
     store.dispatch('delete', item);
   }
